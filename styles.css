@@ -28,6 +28,7 @@ body {
     height:100vh ;
     margin: 0;
     scroll-behavior: smooth ;
+    min-width: 320px;
     
 
 }
@@ -51,7 +52,7 @@ button:hover{
     flex-direction: row;
     justify-content: center;
     gap: 20px; 
-    width: 1500px; 
+    width: 100%; 
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
@@ -87,4 +88,11 @@ button:hover{
     background-color: black;
     font-size: 1.15em;
 
+}
+@media (min-width: 480px) {
+    .container{
+        display: flex;
+        flex-direction: row ;
+    }
+    
 }
